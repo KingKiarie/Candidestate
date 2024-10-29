@@ -1,12 +1,14 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./index.scss";
+import "./index.css";
 import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import About from "./pages/About/About.jsx";
 import Login from "./pages/Auth/Login.jsx";
 import Signup from "./pages/Auth/Signup.jsx";
 import Property from "./pages/Property/Property.jsx";
+import Navbar from "./Components/Navbar.jsx";
+import Footer from "./Components/Footer.jsx";
 
 const paths = createBrowserRouter([
   {
@@ -33,6 +35,8 @@ const paths = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
+    <Navbar />
     <RouterProvider router={paths} />
+    <Footer />
   </StrictMode>
 );
