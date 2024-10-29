@@ -8,10 +8,11 @@ const Navbar = () => {
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Buy/Sell", path: "/property" },
+    { name: "Contact", path: "#contact" },
   ];
 
   const sideLinks = [
-    { name: "Contact", path: "#contact" },
+    { name: "Cart", path: "/cart" },
     { name: "Login", path: "/login" },
   ];
 
@@ -27,13 +28,13 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-full h-20 fixed top-0 left-0 z-50 shadow-md flex items-center transition-colors duration-300 ${
-        isScrolled ? "bg-black/50" : "bg-transparent"
+      className={`w-full h-20 text-black fixed top-0 left-0 z-50 shadow-md flex items-center transition-colors duration-300 ${
+        isScrolled ? "bg-black text-white" : "bg-transparent"
       }`}
     >
       <div className="flex w-full max-w-[80%] mx-auto justify-between items-center px-4 md:px-0">
         {/* Logo */}
-        <div className="text-lg font-bold">Logo</div>
+        <div className="text-lg font-bold text-white">Logo</div>
 
         {/* Desktop Links */}
         <div className="hidden md:flex space-x-8">

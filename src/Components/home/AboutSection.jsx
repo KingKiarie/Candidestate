@@ -18,7 +18,7 @@ const AboutSection = () => {
 
   return (
     <section className="w-full h-1/2 py-24 bg-gray-50 ">
-      <div className="w-full max-w-[80%] mx-auto flex flex-row space-x-8">
+      <div className="w-full max-w-[80%] mx-auto flex flex-col lg:flex-row space-x-8 space-y-8">
         <div className="relative w-full">
           <img
             src="/About.jpg"

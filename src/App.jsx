@@ -6,6 +6,7 @@ import Hero from "./Components/home/Hero";
 import AboutSection from "./Components/home/AboutSection";
 import PropertySection from "./Components/home/PropertySection";
 import Contact from "./Components/home/Contact";
+import Testimonies from "./Components/home/Testimonies";
 import SearchInput from "./Components/SearchInput";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       {/* <SearchInput /> */}
       <AboutSection />
       <PropertySection />
+      <Testimonies />
       <Contact />
     </section>
   );

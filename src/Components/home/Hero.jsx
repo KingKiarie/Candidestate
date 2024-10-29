@@ -44,7 +44,7 @@ const Hero = () => {
       className="relative w-full h-screen bg-cover bg-no-repeat"
       style={{ backgroundImage: "url(/hero.jpg)" }}
     >
-      <div className="absolute inset-0 z-10 bg-black opacity-50 w-[80%] h-[80%] top-20 left-[10%]"></div>
+      <div className="absolute inset-0 z-10 bg-black opacity-50 w-[80%] h-[50%] lg:w-[80%] lg:h-[80%] top-64 lg:top-20 left-[10%]"></div>
       <AnimatePresence mode="wait">
         <motion.div className="space-y-16 h-screen relative z-20 flex flex-col justify-center items-center ">
           <motion.div
@@ -56,7 +56,7 @@ const Hero = () => {
             transition={{ duration: 0.888 }}
             className="space-y-10"
           >
-            <h1 className="text-6xl text-center text-montserrat font-black text-white">
+            <h1 className="text-3xl md:text-6xl lg:text-6xl text-center text-montserrat font-black text-white">
               {currentText.title}
             </h1>
             <p className="text-center text-xl font-bold  text-white">
