@@ -13,9 +13,11 @@ const tile = ({ headerTag, desc, title, btn }) => {
           <p className="text-md font-semibold ">{desc}</p>
         </div>
         <div className="text-md font-semibold w-full rounded-xl ">
-          <button className="py-8 px-8 bg-black rounded-md text-white text-md font-semibold">
-            {btn}
-          </button>
+          <a href="/about">
+            <button className="py-8 px-8 bg-black rounded-md text-white text-md font-semibold">
+              {btn}
+            </button>
+          </a>
         </div>
       </div>
     </section>
