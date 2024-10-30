@@ -2,9 +2,13 @@ import React from "react";
 
 const SearchInput = () => {
   return (
-    <section className="w-full h-40 relative">
-      <div className="relative top-[-20%] w-auto p-4 backd">
-        <div className="relative  flex items-center justify-center space-x-4">
+    <section
+      className="relative w-full h-[60vh] bg-cover bg-fixedm items-center justify-center flex"
+      style={{ backgroundImage: "url('/search.jpg')" }}
+    >
+      <div className="absolute inset-0 bg-black/20"></div>
+      <div className="relative w-full max-w-[80%] mx-auto p-4 ">
+        <div className="flex items-center justify-center space-x-4">
           <input
             type="text"
             name=""

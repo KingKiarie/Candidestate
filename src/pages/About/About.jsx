@@ -6,6 +6,7 @@ import AgentList from "../../Components/AgentCard";
 import Services from "../../Components/Services";
 import Process from "../../Components/Process";
 import FAQAccordion from "../../Components/Faq";
+import ScrollableCards from "../../Components/AboutCards";
 
 const About = () => {
   const aboutData = [
@@ -36,39 +37,24 @@ const About = () => {
       <div className="w-full max-w-[80%] mx-auto">
         <h1 className="text-3xl font-bold ">About Us</h1>
         <div className="my-10">
-          <div className="flex flex-row">
-            <div className="w-full flex items-center justify-center">
-              <img src="/aboutus.jpg" alt="" className="w-2/3 h-auto" />
+          <div className="flex flex-col md:flex-col lg:flex-row space-y-10 space-x-8">
+            <div className="w-full flex  items-center justify-center">
+              <img
+                src="/bout.jpg"
+                alt=""
+                className="w-full rounded-xl  h-auto"
+              />
             </div>
 
             <div className="flex flex-col items-center justify-evenly ">
-              <div className="w-full flex items-center justify-center">
-                <AboutTile
-                  headerTag={"About us"}
-                  title={"About Us"}
-                  desc={
-                    "We are a leading estate-selling firm committed to connecting buyers with their dream properties. Our team prides itself on professionalism, trust, and transparency in every transaction."
-                  }
-                  divider={"join us"}
-                />
-              </div>
-              <div className="w-full flex items-center justify-center">
-                <AboutTile
-                  headerTag={"Our Goal"}
-                  title={"Priorities"}
-                  desc={
-                    "We are a leading estate-selling firm committed to connecting buyers with their dream properties. Our team prides itself on professionalism, trust, and transparency in every transaction."
-                  }
-                  divider={"join us"}
-                />
-              </div>
+              <ScrollableCards />
             </div>
           </div>
         </div>
-        <div className="w-full flex flex-row space-x-4 my-20">
+        <div className="w-full flex flex-col  md:flex-row lg:flex-row space-x-4 my-20">
           {/* Mission Section */}
-          <div className="w-full">
-            <div className="w-full flex items-center justify-center border-r-2 border-gray-200 rounded-lg">
+          <div className="w-full flex items-center justify-center flex-col space-y-4">
+            <div className="w-full flex items-center justify-center rounded-lg ">
               <img
                 src="/mission.jpg"
                 alt="Our Mission"
@@ -86,8 +72,8 @@ const About = () => {
           </div>
 
           {/* Vision Section */}
-          <div className="w-full">
-            <div className="w-full flex items-center justify-center border-l-2 border-gray-200 rounded-lg">
+          <div className="w-full flex flex-col items-center justify-center space-y-4">
+            <div className="w-full flex items-center justify-center border-hidden lg:border-l-2 lg:border-gray-200 rounded-lg">
               <img
                 src="/vision.jpg"
                 alt="Our Vision"
