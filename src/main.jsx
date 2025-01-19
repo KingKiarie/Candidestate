@@ -9,6 +9,7 @@ import Signup from "./pages/Auth/Signup.jsx";
 import Property from "./pages/Property/Property.jsx";
 import Navbar from "./Components/Navbar.jsx";
 import Footer from "./Components/Footer.jsx";
+import Contact from "./pages/contact/Contact.jsx";
 
 const paths = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const paths = createBrowserRouter([
   {
     path: "/property",
     element: <Property />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
   },
 ]);
 
