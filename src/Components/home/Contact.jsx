@@ -4,18 +4,13 @@ import { motion } from "framer-motion";
 const Contact = () => {
   return (
     <section
-      className="bg-cover bg-no-repeat w-full min-h-screen bg-fixed flex flex-col items-center justify-center"
+      className="bg-cover bg-no-repeat w-full py-4 lg:py-8 bg-fixed flex flex-col items-center justify-center"
       style={{ backgroundImage: "url('/contact2.jpg')" }}
     >
-      <div className="w-full max-w-[90%] md:max-w-[80%] mx-auto flex flex-col lg:flex-row mt-10 items-center lg:items-center justify-center space-x-10">
-        {/* Image and Header Section */}
-        <div className="relative w-full lg:w-1/2 mb-6 lg:mb-0">
-          <img
-            src="/contact.jpg"
-            alt="Contact us"
-            className="w-full h-64 lg:h-auto rounded-lg object-cover"
-          />
-          <div className="absolute top-10 left-10 lg:left-20">
+      <div className=" w-full max-w-[90%]  mx-auto flex flex-col lg:flex-row mt-10 items-center lg:items-center justify-center lg:space-x-10">
+        <div className="relative bg-cover bg-center rounded-md h-80 lg:h-[54vh] lg:w-1/2 w-full" style={{backgroundImage: `url('/contact.jpg')`}}>
+        <div className="absolute bg-black/20 w-full h-[100%] rounded-md z-10"></div>
+          <div className="relative z-20 flex flex-col items-start p-4 lg:p-8 justify-center">
             <h1 className="text-3xl md:text-5xl font-black text-white">
               Contact Us Today
             </h1>
@@ -26,6 +21,7 @@ const Contact = () => {
               Location: 1234 Tech Avenue, Nairobi, Kenya
             </p>
           </div>
+
         </div>
 
         {/* Form Section */}
